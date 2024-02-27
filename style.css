@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+.fira-mono-regular {
+    font-family: "Fira Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fira-mono-medium {
+    font-family: "Fira Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.fira-mono-bold {
+    font-family: "Fira Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .row {
   display: flex;
   gap: 10px;
@@ -7,29 +27,37 @@
   flex: 50%;
   padding: 10px;
   overflow: scroll;
+  border: 5px solid gray;
+  border-radius: 10px;
 }
 
-td, th {
+table {
+    border: 5px #4E2A84 solid;
+    border-radius: 10px;
+}
+
+td {
     min-width: 4rem;
     width: 4rem;
     height: 2rem;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
+    border-radius: 3px;
     text-align: center;
-}
-
-th {
-    background: lightblue;
-    border-color: white;
 }
 
 body {
     padding: 1rem;
-    font-size: larger;
+    background-color: rgb(240, 240, 240);
+    font-family: "Fira Mono";
+    font-size: 16pt;
 }
 
 input {
     border: none;
     height: 100%;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
 }
 
 pre code {
